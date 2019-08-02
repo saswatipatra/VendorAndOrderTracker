@@ -40,7 +40,7 @@ namespace Customer.Controllers
 
     // This one creates new Items within a given vendor, not new vendors:
     [HttpPost("/vendors/{vendorId}/orders")]
-    public ActionResult Create(int vendorId, string itemDescription)
+    public ActionResult Create(int vendorId, string orderDescription)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
