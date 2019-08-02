@@ -7,6 +7,15 @@
 <form action="/vendors/@Model.Id/orders" method="post">
   <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
   <label for="orderDescription">Order Description</label>
-  <input id="orderDescription" name="orderDescription" type="text">
+  <input id="orderDescription" name="orderDescription" type="text"><br>
+  <label for="orderDate">Add the date of order</label>
+  <input id="orderDate" name="orderDate" type="text"><br>
+  <label for="orderPrice">Add it's price</label>
+  <input id="orderPrice" name="orderPrice" type="number"><br>
+  <label for="deliver">Did you deliver yet ?</label>
+    <select class="form-control" name="deliver">
+      <option value="true">Yes</option>
+      <option value="false">No</option>
+    </select><br>
   <button type='submit'>Add order</button>
 </form>
